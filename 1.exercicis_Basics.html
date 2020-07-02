@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        //exercici 1
+        console.log("Hola món!");
+
+        //exercici 2
+        alert("Em dic Manolo cabezabolo!");
+
+        //exercici 3
+        var nom = "Manolo",
+            cognom = "cabezabolo";
+
+        console.log(nom + " " + cognom);
+
+        //exercici 4
+        var num1 = 4, num2 = 5;
+        console.log("La suma de " + num1 + " i " + num2 + " és " + (num1+num2));
+
+        //exercici 5
+        var num = 5;
+        if(num >= 5){
+            console.log("Olé tu! Que has aprobat locooo!");
+        }else{
+            console.log("Hey bro, no passa res, a la próxima un 10");
+        }
+
+        //exercici 6
+        var cotxe = "Tinc un cotxe verd";
+        cotxe = cotxe.replace(/verd/g, "blau");
+        cotxe = cotxe.replace(/o/g, "u");
+        console.log(cotxe);
+
+        //exercici 7
+        var objectes = ["taula", "cadira", "ordinador", "llibreta"];
+        for(let i = 0; i<objectes.length; i++){
+            console.log(objectes[i] + " és a la posició " + i);
+        }
+
+        //exercici 8
+        function calculadora (operador, valor1, valor2){
+            if(operador == "suma") console.log(valor1+valor2);
+            else if(operador == "resta") console.log(valor1-valor2);
+            else if(operador == "multiplicar") console.log(valor1*valor2);
+            else console.log("Només es pot fer suma, resta o multiplicar!");
+        }
+
+        calculadora("suma", 2, 3);
+
+    </script>
+</body>
+</html>
