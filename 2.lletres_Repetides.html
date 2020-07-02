@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //fase 1
+        var nom = ["a", "d", "r", "i", "a"];
+        for(let i = 0; i<nom.length; i++){
+            console.log(nom[i]);
+        }
+
+        //fase 2
+        for(let i = 0; i<nom.length; i++){
+            if(nom[i].match(/[aeiou]/gi)) console.log("He trobat la vocal: " + nom[i]);
+            else if (nom[i].match(/[bcdfghjklmnpqrstvwxys]/gi)) console.log("He trobat la consonant: " + nom[i]);
+            else if (nom[i].match(/[0-9]/gi)) console.log("Els noms de persones no tenen el numero: " + nom[i]);
+            else console.log("What's this?");
+        }
+
+        //fase 3
+        const lletres = nom.map(e => ({
+            e
+        }));
+        console.log(lletres);
+
+    </script>
+</body>
+</html>
