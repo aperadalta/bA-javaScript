@@ -10,6 +10,7 @@
     <script>
         //fase 1
         var nom = ["a", "d", "r", "i", "a"];
+
         for(let i = 0; i<nom.length; i++){
             console.log(nom[i]);
         }
@@ -23,11 +24,25 @@
         }
 
         //fase 3
-        const lletres = nom.map(e => ({
-            e
-        }));
-        console.log(lletres);
+        const returnObject = {};
 
+        var dates = nom.map(function(character){
+            if (returnObject.hasOwnProperty(character)) {
+                returnObject[character] += 1;
+            } else {
+                returnObject[character] = 1;
+            }
+        });
+        
+        console.log(returnObject);
+
+        //fase 4
+        var cognom = "peradalta";
+        cognom = cognom.split("");
+        var suma = nom.concat(" ").concat(cognom);
+
+        console.log(suma);
+        
     </script>
 </body>
 </html>
